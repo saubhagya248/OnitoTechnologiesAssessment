@@ -5,6 +5,8 @@ import org.hibernate.annotations.ManyToAny;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
@@ -24,9 +26,12 @@ import lombok.experimental.FieldDefaults;
 public class Rating{
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    Integer id;
+
     @ManyToOne
     @JoinColumn(name="tconst")
-    String id;
+    String tconst;
 
     @Column(name = "averageRating")
     Double avgRating;

@@ -18,8 +18,11 @@ import com.OnitoTechnologies.Assessment.Enums.*;
 public class Movie{
 
     @Id
-    @Column(name="tconst")
+    @Column(name="id")
     String id;
+
+    @Column(name = "tconst")
+    String tconst;
 
     @Column(name="titleType")
     @Enumerated(EnumType.STRING)
