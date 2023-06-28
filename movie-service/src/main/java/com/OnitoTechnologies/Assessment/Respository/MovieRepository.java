@@ -38,7 +38,7 @@ public interface MovieRepository extends JpaRepository<Movie, String> {
 
 
     @Modifying(clearAutomatically = true)
-    @Query(value = "UPDATE onito.movies" +
+    @Query(value = "UPDATE onito.movies " +
             "SET runtime_minutes = CASE" +
             "    WHEN genres = 'DOCUMENTARY' THEN runtime_minutes + 15" +
             "    WHEN genres = 'ANIMATION' THEN runtime_minutes + 30" +

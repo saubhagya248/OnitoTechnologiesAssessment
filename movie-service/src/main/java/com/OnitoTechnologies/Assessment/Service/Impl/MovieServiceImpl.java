@@ -10,6 +10,7 @@ import com.OnitoTechnologies.Assessment.Respository.MovieRepository;
 import com.OnitoTechnologies.Assessment.Service.MovieService;
 import com.OnitoTechnologies.Assessment.Transformer.MovieTransformer;
 import com.OnitoTechnologies.Assessment.Util.Converter;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,6 +19,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
+@Transactional
 public class MovieServiceImpl implements MovieService {
 
     @Autowired

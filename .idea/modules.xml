@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/OnitoTechnologiesAssessment.iml" filepath="$PROJECT_DIR$/.idea/OnitoTechnologiesAssessment.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Assessment/movie-service.iml" filepath="$PROJECT_DIR$/Assessment/movie-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/movie-service/movie-service.iml" filepath="$PROJECT_DIR$/movie-service/movie-service.iml" />
     </modules>
   </component>
 </project>
